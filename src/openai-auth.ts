@@ -320,7 +320,7 @@ export async function getBrowser(
   }
 
   const browser = await puppeteer.launch({
-    headless: false,
+    headless: true,
     args: puppeteerArgs,
     ignoreDefaultArgs: [
       '--disable-extensions',
